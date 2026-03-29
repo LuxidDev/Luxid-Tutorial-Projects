@@ -2,7 +2,6 @@
     <img src="https://luxid.dev/lion5.svg" width="120" alt="Luxid Logo">
 </p>
 
->>>>>>> master
 # Luxid Tutorials
 
 Welcome to the official **Luxid Tutorial Projects** repository — a curated collection of practical example projects built with the Luxid Framework.
