@@ -1,0 +1,15 @@
+{
+  "compiler": {
+    "cache": {
+      "enabled": true,
+      "path": "storage/framework/nova"
+    },
+    "debug": false
+  },
+  "default_layout": "AppLayout",
+  "component_paths": [
+    "nova/components",
+    "nova/pages",
+    "nova/layouts"
+  ]
+}

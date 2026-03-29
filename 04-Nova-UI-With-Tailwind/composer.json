@@ -1,0 +1,49 @@
+{
+  "name": "luxid/framework",
+  "description": "Starter project for Luxid Framework",
+  "type": "project",
+  "license": "MIT",
+  "keywords": [
+    "framework",
+    "starter",
+    "luxid",
+    "php"
+  ],
+  "require": {
+    "php": "^8.0",
+    "luxid/engine": "^0.6.9",
+    "luxid/nova": "^0.1.1",
+    "luxid/rocket": "^0.1.8",
+    "vlucas/phpdotenv": "^5.6"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/",
+      "Luxid\\Framework\\": "config/"
+    }
+  },
+  "extra": {
+    "luxid": {
+      "providers": [
+        "Luxid\\Sentinel\\Providers\\SentinelServiceProvider"
+      ],
+      "commands": {
+        "sentinel:install": "Luxid\\Sentinel\\Console\\InstallCommand"
+      }
+    }
+  },
+  "authors": [
+    {
+      "name": "Jhay",
+      "email": "jhay@luxid.dev"
+    }
+  ],
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "scripts": {
+    "post-create-project-cmd": [
+      "php -r \"if (file_exists('.env.example') && !file_exists('.env')) copy('.env.example', '.env');\"",
+      "Luxid\\Framework\\Kernel::postCreateProject"
+    ]
+  }
+}
