@@ -46,5 +46,35 @@
       "php -r \"if (file_exists('.env.example') && !file_exists('.env')) copy('.env.example', '.env');\"",
       "Luxid\\Framework\\Kernel::postCreateProject"
     ]
-  }
+  },
+  "repositories": [
+    {
+      "type": "path",
+      "url": "../../Engine",
+      "options": {
+        "symlink": true
+      }
+    },
+    {
+      "type": "path",
+      "url": "../../Nova",
+      "options": {
+        "symlink": true
+      }
+    },
+    {
+      "type": "path",
+      "url": "../../Rocket-ORM",
+      "options": {
+        "symlink": true
+      }
+    },
+    {
+      "type": "path",
+      "url": "../../Haven",
+      "options": {
+        "symlink": true
+      }
+    }
+  ]
 }
