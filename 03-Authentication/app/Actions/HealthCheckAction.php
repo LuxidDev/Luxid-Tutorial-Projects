@@ -4,7 +4,7 @@ namespace App\Actions;
 
 use Luxid\Nodes\Response;
 
-class HealthCheckerAction extends LuxidAction
+class HealthCheckAction extends LuxidAction
 {
   /**
    * Get /api/health
