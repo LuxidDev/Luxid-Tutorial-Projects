@@ -7,7 +7,7 @@ use App\Actions\WelcomeAction;
 route('welcome')
   ->get('/')
   ->uses(WelcomeAction::class, 'index')
-  ->open();
+  ->public();
 
 // Example: Dashboard (protected route - requires authentication)
 // route('dashboard')

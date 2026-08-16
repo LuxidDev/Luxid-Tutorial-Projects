@@ -7,7 +7,7 @@ use App\Actions\HealthCheckAction;
 route('api.health')
   ->get('/api/health')
   ->uses(HealthCheckAction::class, 'index')
-  ->open();
+  ->public();
 
 // Example API endpoints (commented out - uncomment as needed)
 // route('users.index')
